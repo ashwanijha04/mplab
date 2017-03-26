@@ -1,17 +1,16 @@
 ## Welcome Folks!
 
-This repository contains the **Microprocessors program**. I have also posted a video on how to install and use MASM in your own system. If you need the video, ping me personall
+This repository contains the **Microprocessors program**. I have also posted a video on how to install and use MASM in your own system. If you need the video, ping me personally.
 
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```Program List
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
+1. Binary Search
+2. Fibonacci Series
+3. Bubble Sort
+4
 
 **Bold** and _Italic_ and `Code` text
 

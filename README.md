@@ -1,6 +1,6 @@
 ## Welcome Folks!
 
-This repository contains the #Microprocessors #program. I have also posted a video on how to install and use MASM in your own system. If you need the video, ping me personally.
+This repository contains the ##Microprocessors #program. I have also posted a video on how to install and use MASM in your own system. If you need the video, ping me personall
 
 ### Markdown
 

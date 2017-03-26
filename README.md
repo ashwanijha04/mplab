@@ -2,16 +2,10 @@
 
 This repository contains the **Microprocessors program**. I have also posted a video on how to install and use MASM in your own system. If you need the video, ping me personall
 
-### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
-
-# Microprocessors
-## Lab
-### Information Science and Engineering
+```Program List
 
 - Bulleted
 - List

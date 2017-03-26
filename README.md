@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome Folks!
 
-You can use the [editor on GitHub](https://github.com/ashwanijha04/mplab/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This repository contains the #Microprocessors #program. I have also posted a video on how to install and use MASM in your own system. If you need the video, ping me personally.
 
 ### Markdown
 

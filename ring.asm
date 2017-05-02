@@ -19,13 +19,16 @@ code segment
      rpt:
          mov dx,pa
          out dx,al
+         
          call delay
          ror al,1
+         
          push ax
          mov ah,06h
          mov dl,0ffh
          int 21h
          pop ax
+         
          jz rpt
 
          mov ah,4ch

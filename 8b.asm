@@ -44,11 +44,12 @@ nextchar:
         loop next
         call delay
        
-         mov ah, 06h
-         mov dl,0ffh
+         mov ah, 06h            ;Keyboard  input
+         mov dl,0ffh            ; Don't wait for input
          int 21h
 
-         jz rpt         ;continuous loop
+         jz rpt                 ;continuous loop if no key pressed
+         
          mov ah,4ch
          int 21h
 

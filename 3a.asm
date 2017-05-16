@@ -37,16 +37,19 @@ rpt:
                 mov bh,0
                 lea si,p2
           again:
-                mov ah,8
+                mov ah,8                ;read character and attribute at cursor position.
                 int 21h
-                cmp al,0dh
+                cmp al,0dh              ;carraige return
                 je next
+                
                 mov [si],al
                 inc si
                 inc bh
                 mov dl,'*'
-                mov ah,02
+                
+                mov ah,02               ;set cursor position. 
                 int 21h
+                
                 jmp again
            next:
                 mov l2,bh

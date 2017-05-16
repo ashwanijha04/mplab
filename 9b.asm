@@ -5,7 +5,7 @@ pb equ 20a1h
 pc equ 20a2h
 cr equ 20a3h
 
-msgdb 0d1h,0ffh,0ffh,0ffh,061h,0ffh,0ffh,0ffh,0e3h,0ffh, 0ffh, 0ffh,031h,0ffh
+msgdb 0d1h,061h,0e3h,031h,
 data ends
 
 code segment
@@ -18,7 +18,7 @@ start:
         out dx,al
 
 rpt: 
-        mov cx,14d
+        mov cx,4d
         lea si,msg
 nextchar:
          mov al,[si]

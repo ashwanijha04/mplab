@@ -11,17 +11,17 @@ next_digit:
           add ax,3030h
 
           mov dl,ah           ; output ah
-          mov ah,2
+          mov ah,2            ; output a character
           push ax             ; push and pop saves the value of al register
           int 21h
           pop ax
 
           mov dl,al           ; output al
-          mov ah,2
+          mov ah,2            ; output a character
           int 21h
 
-          mov dl,0dh          
-          mov ah,2
+          mov dl,0dh          ; display carraige return
+          mov ah,2            ; output a character
           int 21h
 
           

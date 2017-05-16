@@ -1,4 +1,4 @@
-assume cs:code, ds:data
+assume cs:code
 code segment
 start:
       mov cx, 100d
@@ -18,10 +18,6 @@ next_digit:
           mov ah,2
           int 21h
           mov dl,0dh
-          mov ah,2
-          int 21h
-          call delay
-          inc bl
           mov ah,2
           int 21h
           call delay

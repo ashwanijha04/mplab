@@ -8,29 +8,35 @@ start:
 next_digit:
           mov al,bl
           aam
-          add ax, 3030h
+          add ax,3030h
+
           mov dl,ah
           mov ah,2
           push ax
           int 21h
           pop ax
+
           mov dl,al
           mov ah,2
           int 21h
+
           mov dl,0dh
           mov ah,2
           int 21h
+
+          
+
           call delay
           inc bl
-          
           loop next_digit
+          
           mov ah,4ch
           int 21h
           
           
 delay proc
-        mov si, 02202h
-     l1:mov di, 0ffffh
+        mov si, 0222h
+     l1:mov di, 02ffh
      l2:dec di
         jnz l2
         dec si

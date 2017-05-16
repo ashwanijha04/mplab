@@ -1,16 +1,19 @@
 assume cs:code
 code segment
 start:
-        mov ah,2ch
+        mov ah,2ch              ;get system time
         int 21h
-
-        mov al,ch
-        call hex_bcd
-        call disp
-        mov dl,':'
-        mov ah,2
+        
+        mov al,ch               ; mov hours to al
+        call hex_bcd            ;convert hours from hex to bcd
+        call disp               ;display
+        
+        mov dl,':'              ; put the colon in dl register
+        
+        mov ah,2                ;get system time again
         int 21h
-        mov al,cl
+                
+        mov al,cl               ;move minutes to al now
         call hex_bcd
         call disp
 
@@ -18,8 +21,9 @@ start:
         int 21h
 
      disp proc
-        push cx
+        push cx                 
         mov ah,00h
+        
         mov cx,4
         shl ax,1
         shl ax,1
@@ -30,15 +34,20 @@ start:
         shr al,1
         shr al,1
         shr al,1
+        
         add ax,3030h
         push ax
+        
         mov dl,ah
         mov ah,2
         int 21h
+        
         pop ax
-        mov ah,2
+        
         mov dl,al
+        mov ah,2
         int 21h
+        
         pop cx
         ret
         disp endp

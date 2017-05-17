@@ -5,7 +5,7 @@ pa equ 20A0h
 Pb equ 20A1h
 pc equ 20A2h
 cr equ 20A3h
-msg db "No of 1's : "
+msg db "No of 0's : "
 ones db ?,"$"
 data ends
 
